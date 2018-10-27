@@ -1,0 +1,18 @@
+<div class="login-container row">
+    <form class="col s12 m12 l4 l4 push-l4 " [formGroup]="loginForm" (ngSubmit)="login()">
+        <h3 class="page-title">Login</h3>
+        <div class="input-field">
+            <input mz-input type="text" placeholder="Username" formControlName="username" />
+            <div *ngIf="submitted && fc.username.errors" class="invalid-feedback">
+                <span *ngIf="fc.username.errors.required" class="helper-text">Username is required</span>
+            </div>
+        </div>
+        <div class="input-field">
+            <input mz-input type="password" placeholder="Password" formControlName="password" />
+            <div *ngIf="submitted && fc.password.errors" class="invalid-feedback">
+                <span *ngIf="fc.password.errors.required" class="helper-text">Password is required</span>
+            </div>
+        </div>
+        <button mz-button>Login</button>
+    </form>
+</div>

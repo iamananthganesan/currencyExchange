@@ -1,0 +1,32 @@
+<header>
+  <!-- <mz-tab>
+      <mz-tab-item [disabled]="'true'" [label]="'Currency Exchange'">
+      Tab 1
+    </mz-tab-item>
+    <mz-tab-item [active]="'true'" [label]="'CURRENCY CONVERTER'" (click)="goCurrencyConverter($event)" href="/currency-converter">
+    </mz-tab-item>
+    <mz-tab-item [label]="'VIEW CONVERSION HISTORY'" href="/view-history"></mz-tab-item>
+  </mz-tab> -->
+  <!-- <div (click)="goCurrencyConverter()">currency converter</div>
+
+<div [routerLink] = "['/view-history']">view history</div> -->
+  <div class="container">
+    <div class="row">                
+      <div class="col s12 m5 l3 xl3 logo-brand">
+        <a [routerLink]="['/login']">
+          <span><i class="material-icons">find_replace</i></span><span class="logoContent">Currency<b> Exchange</b></span>
+        </a>
+      </div>
+
+      <ul class="tabs tabs-icon col s12 m8 l7 xl7">
+          <li class="tab col"><a class="active" [routerLink]="['/currency-converter']">CURRENCY CONVERTER</a></li>
+          <li class="tab col"><a  [routerLink]="['/view-history']">VIEW CONVERSION HISTORY</a></li>
+        </ul>
+
+      <div class="col l2 xl2 header-panel">
+          <a [routerLink]="['/login']" title="Logout" class="btn-logOut">LOGOUT</a>
+      </div>
+    </div>
+
+  </div>
+</header>

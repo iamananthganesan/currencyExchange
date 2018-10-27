@@ -1,0 +1,30 @@
+@import '../../../sass/variables';
+
+.actions{
+    a{
+        display: inline-flex;
+        vertical-align: middle;
+        text-transform: none;
+        cursor: pointer;
+        i{
+            margin-right: 5px;
+        }
+        color: $warn;   
+    }
+
+    a:first-child{
+        margin-right: 15px;
+        color: $primary;
+    }
+}
+
+.card-content{
+    padding: 0;
+    .empty-card{
+        padding: 24px;
+    }
+}
+
+.cancel-btn{
+    margin-right: 20px !important;
+}

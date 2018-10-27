@@ -1,0 +1,12 @@
+@import '../../../sass/variables';
+
+.converter-input-holder{
+    form{
+        .swap-btn{
+            background-color: white;
+            color: $primary;
+            width: 50px;
+            top: 25px;
+        }
+    }
+}

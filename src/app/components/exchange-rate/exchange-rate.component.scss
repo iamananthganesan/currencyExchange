@@ -1,0 +1,13 @@
+@import '../../../sass/variables';
+
+.display-conversion-container{
+    text-align: center;
+    margin-top:10px;
+    .main-conversion{
+        font-size: 40px;
+        .expecting-price{
+            font-weight: bold;
+            color: $accent;
+        }
+    }
+}

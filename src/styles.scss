@@ -1,0 +1,27 @@
+//Colors
+@import './sass/variables';
+
+body { 
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    background-color: #efefef;
+  }
+   
+h1,h2,h3,h4,h5,h6{
+      font-weight: bold;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: rgba(178, 246, 218, 0.2);
+}
+.tab a {
+    color: $table_header_text !important;
+}
+
+.tab a.active {
+    color: $default_text !important;
+}
+
+.tabs .indicator{
+    background-color: $primary !important;
+}

@@ -1,0 +1,51 @@
+// header{
+//     height:70px;
+//     box-shadow: -3px 1px 11px 5px rgba(0,0,0,0.25);
+//     background-color: white;
+// }
+@import '../../../sass/variables';
+header{
+    background-color: #ffffff;
+}
+.header-panel{
+    columns: $primary;
+    padding: 5px 0;
+}
+.logo-brand > a{
+    display: table;
+    font-size: 18px;
+    padding-top: 10px; 
+}
+.logo-brand a > span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.logo-brand .material-icons{
+    color: $primary;
+}
+.logo-brand .logoContent{
+    color: #404040;
+}
+.btn-logOut{
+    color: $primary;
+    font-weight: bold;
+    font-size: 12px;
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+}
+.tab{
+    a{
+        text-transform: none;
+        font-size: 12px;
+    }
+    span{
+        i{
+            color: $primary;
+        }
+        display: inline-flex;
+        vertical-align: middle;
+    }
+}
+
+

@@ -1,0 +1,11 @@
+<div *ngIf="!isNaN(amount * toValue)" class="display-conversion-container">
+    <div class="main-conversion">
+        <span>{{amount}} {{fromCurrency}} = </span><span class="expecting-price">{{amount * toValue}} {{toCurrency}}</span>
+      </div>
+      <div class="from-unit">
+        <span class="col-1">1 {{fromCurrency}} = </span><span>{{toValue}} {{toCurrency}}</span>
+      </div>
+      <div class="to-unit">
+        <span class="col-1">1 {{toCurrency}} = </span><span>{{fromValue}} {{fromCurrency}}</span>
+      </div>
+</div>
